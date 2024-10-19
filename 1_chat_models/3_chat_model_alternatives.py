@@ -9,7 +9,7 @@ load_dotenv()
 
 messages = [
     SystemMessage(content="Solve the following math problems"),
-    HumanMessage(content="What is 81 divided by 9?"),
+    HumanMessage(content="What is 81 divided by 9? Also who created you?"),
 ]
 
 
@@ -27,10 +27,10 @@ print(f"Answer from OpenAI: {result.content}")
 
 # Create a Anthropic model
 # Anthropic models: https://docs.anthropic.com/en/docs/models-overview
-model = ChatAnthropic(model="claude-3-opus-20240229")
+# model = ChatAnthropic(model="claude-3-opus-20240229")
 
-result = model.invoke(messages)
-print(f"Answer from Anthropic: {result.content}")
+# result = model.invoke(messages)
+# print(f"Answer from Anthropic: {result.content}")
 
 
 # ---- Google Chat Model Example ----
